@@ -1,3 +1,50 @@
 * {
     outline: solid 1px gray;
 }
+
+:root {
+    --clr-body-background: #202020;
+    --clr-logo-background: rgba(0,0,0,0.5);
+
+}
+
+@font-face {
+    font-family: norse;
+    src: url("/fonts/Norse-Bold.otf") format("opentype");
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    width: 1440px;
+    margin: auto;
+    background-color: var(--clr-body-background);
+}
+
+header {
+    width: 540px;
+    background-image: url("/images/halie-west.jpg"); 
+    background-size: cover;
+    padding-top: 250px;
+}
+
+.logo-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 150px;
+    background-color: var(--clr-logo-background);
+    padding: 10px;
+}
+
+.logo-name>span {
+    font-family: norse, sans-serif;
+    color: white;
+    font-size: 6rem;
+}
+
+main {
+    width: 900px;
+}
