@@ -1,5 +1,5 @@
 * {
-    outline: solid 1px gray;
+    outline: solid 1px gray; 
 }
 
 :root {
@@ -9,6 +9,7 @@
     --clr-section-background2: #FFF;
     --clr-primary-text: #080808;
     --clr-secondary-text: #252D3A;
+    --font-logo: norse, sans-serif;
     --font-main: Arial, Helvetica, sans-serif;
 }
 
@@ -50,7 +51,7 @@ header {
 }
 
 .logo-name>span {
-    font-family: norse, sans-serif;
+    font-family: var(--font-logo);
     color: white;
     font-size: 6rem;
 }
@@ -60,7 +61,7 @@ header {
     font-size: 0.8125rem;
 }
 
-.acknowledgement>a {
+.acknowledgement > a {
     color: white;
 }
 
@@ -71,7 +72,7 @@ main {
 }
 
 section {
-    padding: 40px;
+    padding: 40px 150px 40px 40px;
 
 }
 
@@ -88,8 +89,30 @@ section {
 
 .details {
     flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
     background-color: var(--clr-section-background2);
     color: var(--clr-secondary-text);
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 20px;
+}
+
+form > div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    font-size: 0.813rem;
 }
 
 .login {
