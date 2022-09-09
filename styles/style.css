@@ -4,8 +4,8 @@
 
 :root {
     --clr-body-background: #202020;
-    --clr-logo-background: rgba(0,0,0,0.5);
-
+    --clr-logo-background: rgba(0, 0, 0, 0.5);
+    --font-main: Arial, Helvetica, sans-serif;
 }
 
 @font-face {
@@ -21,13 +21,19 @@ body {
     width: 1440px;
     margin: auto;
     background-color: var(--clr-body-background);
+    font-family: var(--font-main);
 }
 
 header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     width: 540px;
-    background-image: url("/images/halie-west.jpg"); 
+    background-image: url("/images/halie-west.jpg");
     background-size: cover;
     padding-top: 250px;
+    padding-bottom: 15px;
 }
 
 .logo-name {
@@ -43,6 +49,15 @@ header {
     font-family: norse, sans-serif;
     color: white;
     font-size: 6rem;
+}
+
+.acknowledgement {
+    color: white;
+    font-size: 0.8125rem;
+}
+
+.acknowledgement>a {
+    color: white;
 }
 
 main {
