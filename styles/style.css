@@ -5,6 +5,10 @@
 :root {
     --clr-body-background: #202020;
     --clr-logo-background: rgba(0, 0, 0, 0.5);
+    --clr-section-background1: #F9FAFB;
+    --clr-section-background2: #FFF;
+    --clr-primary-text: #080808;
+    --clr-secondary-text: #252D3A;
     --font-main: Arial, Helvetica, sans-serif;
 }
 
@@ -61,5 +65,34 @@ header {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
     width: 900px;
+}
+
+section {
+    padding: 40px;
+
+}
+
+.pitch {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-color: var(--clr-section-background1);
+    color: var(--clr-primary-text);
+    gap: 30px;
+    font-size: .938rem;
+}
+
+.details {
+    flex: 2;
+    background-color: var(--clr-section-background2);
+    color: var(--clr-secondary-text);
+}
+
+.login {
+    flex: 3;
+    background-color: var(--clr-section-background1);
 }
