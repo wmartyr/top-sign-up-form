@@ -12,6 +12,7 @@
     --clr-secondary-text: #252D3A;
     --clr-input-border: #E9E9E9;
     --clr-input-background: #FFFEFE;
+    --clr-button-background: #5a6d49;
     --font-logo: norse, sans-serif;
     --font-main: Arial, Helvetica, sans-serif;
 }
@@ -42,6 +43,7 @@ header {
     background-size: cover;
     padding-top: 250px;
     padding-bottom: 15px;
+
 }
 
 .logo-name {
@@ -64,7 +66,7 @@ header {
     font-size: 0.8125rem;
 }
 
-.acknowledgement > a {
+.acknowledgement>a {
     color: white;
 }
 
@@ -81,13 +83,15 @@ section {
 
 .pitch {
     flex: 3;
-    display: flex; 
-    flex-direction: column; 
-    justify-content: end; 
-    background-color: var(--clr-section-background1); 
-    color: var(--clr-primary-text); 
-    gap: 30px; 
-    font-size: .938rem; 
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-color: var(--clr-section-background1);
+    color: var(--clr-primary-text);
+    gap: 30px;
+    font-size: .938rem;
+    box-shadow: 0px -5px 5px red inset;
+    /* box-shadow: 0px -5px 5px var(--clr-section-shadow) inset; */
 }
 
 .details {
@@ -109,7 +113,7 @@ form {
     row-gap: 20px;
 }
 
-form > div{
+form>div {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -132,4 +136,24 @@ input {
     z-index: -1;
     flex: 3;
     background-color: var(--clr-section-background1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+button {
+    background-color: var(--clr-button-background);
+    color: white;
+    border: none;
+    padding: 12px 60px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+p>a {
+    text-decoration: none;
+    color: var(--clr-button-background);
+    font-weight: bold;
 }
