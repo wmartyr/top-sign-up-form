@@ -7,7 +7,7 @@
     --clr-logo-background: rgba(0, 0, 0, 0.5);
     --clr-section-background1: #F9FAFB;
     --clr-section-background2: #FFF;
-    --clr-section-shadow: rgba(175, 175, 175, 0.5);
+    --clr-shadow: rgba(175, 175, 175, 0.5);
     --clr-primary-text: #080808;
     --clr-secondary-text: #252D3A;
     --clr-input-border: #E9E9E9;
@@ -90,7 +90,7 @@ section {
     color: var(--clr-primary-text);
     gap: 30px;
     font-size: .938rem;
-    box-shadow: 0px 0px 5px -4px var(--clr-section-shadow) inset;
+    box-shadow: 0px 0px 5px -4px var(--clr-shadow) inset;
 }
 
 .details {
@@ -138,7 +138,7 @@ input {
     justify-content: flex-start;
     align-items: flex-start;
     gap: 30px;
-    box-shadow: 0px 10px 10px -5px var(--clr-section-shadow) inset;
+    box-shadow: 0px 10px 10px -5px var(--clr-shadow) inset;
 }
 
 button {
@@ -148,6 +148,7 @@ button {
     padding: 12px 60px;
     font-weight: bold;
     border-radius: 10px;
+    box-shadow: 3px 3px 3px var(--clr-shadow);
 }
 
 p>a {
