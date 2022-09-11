@@ -10,9 +10,9 @@
     --clr-shadow: rgba(175, 175, 175, 0.5);
     --clr-primary-text: #080808;
     --clr-secondary-text: #252D3A;
-    --clr-input-border: #E9E9E9;
+    --clr-input-border: #E5E7EB;
     --clr-input-background: #FFFEFE;
-    --clr-button-background: #5a6d49;
+    --clr-button-background: #596D48;
     --font-logo: norse, sans-serif;
     --font-main: Arial, Helvetica, sans-serif;
 }
@@ -109,6 +109,7 @@ form {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     row-gap: 20px;
+    position: relative;
 }
 
 form>div {
@@ -128,6 +129,13 @@ input {
     border: solid 1px var(--clr-input-border);
     border-radius: 3px;
     width: 80%;
+    padding-left: 10px;
+}
+
+input:hover,
+input:focus {
+    outline: 1px solid blue;
+    box-shadow: 3px 3px 3px var(--clr-shadow);
 }
 
 .login {
@@ -151,8 +159,20 @@ button {
     box-shadow: 3px 3px 3px var(--clr-shadow);
 }
 
-p>a {
+p > a {
     text-decoration: none;
     color: var(--clr-button-background);
     font-weight: bold;
+}
+
+.error {
+    outline: 1px solid red;
+}
+
+form::after {
+    position: absolute;
+    bottom: -20px;
+    content: "* Passwords do not match";
+    color: red;
+    font-size: 00.75rem;
 }
