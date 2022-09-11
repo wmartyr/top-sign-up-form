@@ -1,5 +1,5 @@
 * {
-    outline: solid 1px gray; 
+    /* outline: solid 1px gray;  */
 }
 
 :root {
@@ -7,8 +7,11 @@
     --clr-logo-background: rgba(0, 0, 0, 0.5);
     --clr-section-background1: #F9FAFB;
     --clr-section-background2: #FFF;
+    --clr-section-shadow: rgba(175, 175, 175, 0.5);
     --clr-primary-text: #080808;
     --clr-secondary-text: #252D3A;
+    --clr-input-border: #E9E9E9;
+    --clr-input-background: #FFFEFE;
     --font-logo: norse, sans-serif;
     --font-main: Arial, Helvetica, sans-serif;
 }
@@ -78,13 +81,13 @@ section {
 
 .pitch {
     flex: 3;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    background-color: var(--clr-section-background1);
-    color: var(--clr-primary-text);
-    gap: 30px;
-    font-size: .938rem;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: end; 
+    background-color: var(--clr-section-background1); 
+    color: var(--clr-primary-text); 
+    gap: 30px; 
+    font-size: .938rem; 
 }
 
 .details {
@@ -96,6 +99,7 @@ section {
     gap: 20px;
     background-color: var(--clr-section-background2);
     color: var(--clr-secondary-text);
+    box-shadow: 0px 5px 5px var(--clr-section-shadow);
 }
 
 form {
@@ -113,9 +117,19 @@ form > div{
 
 label {
     font-size: 0.813rem;
+    font-weight: 600;
+}
+
+input {
+    appearance: none;
+    background-color: var(--clr-input-background);
+    border: solid 1px var(--clr-input-border);
+    border-radius: 3px;
+    width: 80%;
 }
 
 .login {
+    z-index: -1;
     flex: 3;
     background-color: var(--clr-section-background1);
 }
