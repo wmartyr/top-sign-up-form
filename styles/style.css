@@ -157,6 +157,7 @@ button {
     font-weight: bold;
     border-radius: 10px;
     box-shadow: 3px 3px 3px var(--clr-shadow);
+    cursor: pointer;
 }
 
 p > a {
