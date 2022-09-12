@@ -15,7 +15,7 @@
 
 @font-face {
     font-family: norse;
-    src: url("../fonts/Norse-Bold.otf") format("opentype");
+    src: url("/../fonts/Norse-Bold.otf") format("opentype");
 }
 
 body {
@@ -35,7 +35,7 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 540px;
-    background-image: url("../images/halie-west.jpg");
+    background-image: url("/../images/halie-west.jpg");
     background-size: cover;
     padding-top: 250px;
     padding-bottom: 15px;
