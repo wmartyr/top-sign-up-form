@@ -174,5 +174,9 @@ form::after {
     bottom: -20px;
     content: "* Passwords do not match";
     color: red;
-    font-size: 00.75rem;
+    font-size: 0.75rem;
+}
+
+form.no-message::after {
+    display: none
 }
